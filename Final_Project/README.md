@@ -27,4 +27,4 @@ This is heavily inspired from **Miguel Grinberg**'s book **Flask Web Development
 
 **Demo Video**: https://www.youtube.com/watch?v=JeWJCIdw0JE&feature=youtu.be
 
-**For the source code visit the GitHub Repo: https://github.com/Rohitth007/Flasky**
+**For the source code visit the GitHub Repo: https://github.com/Rohitth007/TechBytes-Flasky**
