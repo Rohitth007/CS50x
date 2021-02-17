@@ -1,6 +1,7 @@
 # CS50x
 <img src="pics/cat.jpeg" width="150"/>
-Contains all the pset solutions for Harvards CS50x along with the Web Track
+
+### Contains all the pset solutions for Harvards CS50x along with the Web Track
 
 <img src="pics/certificate.jpg" width="500"/>
 
