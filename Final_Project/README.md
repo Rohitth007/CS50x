@@ -1,11 +1,11 @@
-#**Tech Bytes!**
-##**A Markdown Blogging Platform For All Things Tech**
+# **Tech Bytes!**
+## **A Markdown Blogging Platform For All Things Tech**
 
 >You can write your blog in markdown and share it with the world.
 
 >You can also follow your favorite writers to not miss their new blogs.
 
-###Features:
+### Features:
 * Signup and Create interesting profiles, use **_Gravatar_** to make amazing profile pictures.
 * Write and Edit blogs in **_Markdown_**, get a visual preview of your Markdown.
 * Comment to discuss about your favourite blogs.
@@ -16,7 +16,7 @@
 * Moderator has the ability to censor comments if not appropriate.
 * Admin has all edit permissions.
 
-##**Made in Python**
+## **Made in Python**
 Using: **`import flask`**, **`SQLite3`**, **`SQL Alchemy`**, **`Jinja2`** and **`Bootstrap`**
 
 This is heavily inspired from **Miguel Grinberg**'s book **Flask Web Development**.
@@ -25,6 +25,6 @@ This is heavily inspired from **Miguel Grinberg**'s book **Flask Web Development
 * The front-end was written in _HTML5_ and _CSS_ with _Jinja2_ for the dynamic part which talks with Flask.
 * _Bootstrap_ was used for UI elements.
 
-Demo Video: https://www.youtube.com/watch?v=JeWJCIdw0JE&feature=youtu.be
+**Demo Video**: https://www.youtube.com/watch?v=JeWJCIdw0JE&feature=youtu.be
 
-**For the source code visit the GitHub Repo: https://github.com/Rohitth007/Flasky**
+**For the source code visit the GitHub Repo: https://github.com/Rohitth007/TechBytes-Flasky**
