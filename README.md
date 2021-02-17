@@ -1,5 +1,7 @@
 # CS50x
-Contains all the pset solutions for Harvards CS50x alon with the Web Track
+<img src="pics/cat.jpeg" width="150"/>
+
+### Contains all the pset solutions for Harvards CS50x along with the Web Track
 
 <img src="pics/certificate.jpg" width="500"/>
 
@@ -15,3 +17,4 @@ Contains all the pset solutions for Harvards CS50x alon with the Web Track
 | :-------------------------------------------------  | :---------------------------------------------------- |
 | <img src="/pics/tech_bytes_home.png" width="1000"/> | <img src="/pics/tech_bytes_profile.png" width="1000"/> |
 
+For the source code visit the GitHub Repo: https://github.com/Rohitth007/TechBytes-Flasky
