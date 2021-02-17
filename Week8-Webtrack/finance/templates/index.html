@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <h1>Portfolio</h1>
+    <br>
+    <div class="table-responsive-md">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                        <th>Symbol</th>
+                    <th>No. of Shares</th>
+                    <th>Current Price</th>
+                    <th>Total Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% set total = [0] %}
+                {% set count = [1] %}
+                {% for row in table %}
+                    <tr>
+                        <th>{{ count[0] }}</th>
+                        {% if count.append(count.pop() + 1) %}{% endif %}
+                        <td>{{ row["symbol"] }}</td>
+                        <td>{{ row["shares"] }}</td>
+                        <td>{{ row["current_price"] | usd }}</td>
+                        <td>{{ (row["shares"]*row["current_price"]) | usd }}</td>
+                        {% if total.append( total.pop() + row["shares"]*row["current_price"] ) %}{% endif %}
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <th>Cash</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>{{ cash | usd }}</td>
+                </tr>
+                <tr class="table-info">
+                    <th>Grand Total</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>{{ (total[0] + cash) | usd }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

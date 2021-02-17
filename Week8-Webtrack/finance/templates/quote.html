@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Company Symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+    </form>
+    <br>
+    {% if quoted %}
+    <table class="table table-striped">
+        <tr>
+            <th>Name:</th>
+            <td>{{ quoted["name"] }}</td>
+        </tr>
+        <tr>
+            <th>Current Price:</th>
+            <td>{{ quoted["price"] | usd }}</td>
+        </tr>
+        <tr>
+            <th>Symbol:</th>
+            <td>{{ quoted["symbol"] }}</td>
+        </tr>
+    </table>
+    {% endif %}
+{% endblock %}

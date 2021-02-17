@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+
+{% block body%}
+        <h1>Your random number is {{ number }}</h1>
+        <form action="/random">
+            <input type='submit' value='Try Again'>
+        </form>
+{% endblock %}

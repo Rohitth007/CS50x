@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        <form action="/hello">
+            <input name='name' type='text' placeholder='Name Please...'>
+            <input type='submit' value='Submit'>
+        </form>
+        <form action="/random">
+            <input type='submit' value='Get a Random Number'>
+        </form>
+        <form action="/flip">
+            <input type='submit' value='Flip a Coin'>
+        </form>
+{% endblock %}
+

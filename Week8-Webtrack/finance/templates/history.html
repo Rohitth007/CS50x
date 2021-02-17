@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <h1>History</h1>
+    <br>
+    <div class="table-responsive-md">
+        <table class="table table-striped">
+            <thead>
+                <tr class="table-secondary">
+                    <th>#</th>
+                    <th>Symbol</th>
+                    <th>No. of Shares</th>
+                    <th>Action</th>
+                    <th>Purchase/Sale Price</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% set count = [1] %}
+                {% for row in table %}
+                    {% if row["action"] == "buy" %}
+                    {% set style = "table-danger" %}
+                    {% else %}
+                    {% set style = "table-success" %}
+                    {% endif %}
+                    <tr class={{ style }}>
+                        <th>{{ count[0] }}</th>
+                        {% if count.append(count.pop() + 1) %}{% endif %}
+                        <td>{{ row["symbol"] }}</td>
+                        <td>{{ row["shares"] }}</td>
+                        <td>{{ row["action"] }}</td>
+                        <td>{{ row["price"] | usd }}</td>
+                        <td>{{ row["time"] | ftime }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+        {% if number == 1 %}
+            <h1>Your coin flip is HEADS</h1>
+        {% else %}
+            <h1>Your coin flip is TAILS</h1>
+        {% endif %}
+        <form action="/flip">
+            <input type='submit' value='Flip Again'>
+        </form>
+{% endblock %}
